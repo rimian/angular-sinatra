@@ -1,0 +1,10 @@
+{
+  "name": "angular-sinatra",
+  "private": false,
+  "version": "0.0.0",
+  "description": "A Sinatra application running AngularJS and RSpec integration specs",
+  "repository": "https://github.com/rimian/angular-sinatra",
+  "dependencies": {
+    "angular": "^1.4.1"
+  }
+}

@@ -1,3 +1,13 @@
-require 'sinatra'
+require 'sinatra/base'
 
-run Sinatra.new
+app = Sinatra.new do
+  get '/' do
+    send_file 'app/index.html'
+  end
+
+  get '/api' do
+    'Hello world'
+  end
+end
+
+app.run!

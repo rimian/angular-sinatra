@@ -2,12 +2,17 @@
 
 A Sinatra application running AngularJS and RSpec integration specs
 
-This is a demo for testing AngularJS applications.
+This is a demo for integration testing AngularJS applications.
+
+# Requirements
+
+A basic understanding of Ruby, AngularJS and RSpec.
 
 ## Developing
 
 ```
 bundle install
+npm install
 ```
 
 ## Testing
@@ -19,5 +24,5 @@ rspec
 ## Running Locally
 
 ```
-rackup -p 8000 config.ru
+rackup config.ru
 ```
