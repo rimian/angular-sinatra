@@ -5,6 +5,7 @@
   "description": "A Sinatra application running AngularJS and RSpec integration specs",
   "repository": "https://github.com/rimian/angular-sinatra",
   "dependencies": {
-    "angular": "^1.4.1"
+    "angular": "^1.4.1",
+    "angular-route": "^1.4.1"
   }
 }
