@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html ng-app="" ng-strict-di>
+<html lang="en" ng-app="myApp" class="no-js">
 <head>
   <meta charset="utf-8">
   <title>Angular Sinatra</title>
-  <style> body { padding: 20px; } </style>
+  <style> body { padding: 20px; font-family: Sans-Serif; } </style>
 </head>
 <body>
   <h1>Angular Sinatra</h1>
+
+  <section ng-view></section>
+
   <script src="/node_modules/angular/angular.min.js"></script>
   <script src="/node_modules/angular-route/angular-route.min.js"></script>
   <script src="/app.js"></script>
