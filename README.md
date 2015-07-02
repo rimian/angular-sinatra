@@ -24,5 +24,5 @@ rspec
 ## Running Locally
 
 ```
-rackup config.ru
+rackup -p8000 config.ru
 ```

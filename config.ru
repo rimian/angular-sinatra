@@ -1,15 +1,3 @@
-require 'sinatra/base'
+require './lib/app'
 
-app = Sinatra.new do
-  set :public_folder, './'
-
-  get '/' do
-    send_file 'index.html'
-  end
-
-  get '/api' do
-    'Hello world'
-  end
-end
-
-app.run!
+run App.new
