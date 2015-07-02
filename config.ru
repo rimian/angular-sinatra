@@ -1,8 +1,10 @@
 require 'sinatra/base'
 
 app = Sinatra.new do
+  set :public_folder, './'
+
   get '/' do
-    send_file 'app/index.html'
+    send_file 'index.html'
   end
 
   get '/api' do
