@@ -17,9 +17,8 @@
     });
   }])
 
-  .controller('DemoCtrl', [function() {
-
+  .controller('DemoCtrl', ['$scope', '$http', function($scope, $http) {
+    $scope.demo = {text: 'Demo'};
   }]);
-
 
 })();
