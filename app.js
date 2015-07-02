@@ -7,16 +7,10 @@
   ])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider.otherwise({redirectTo: '/demo'});
+    $routeProvider.when('/demo', {templateUrl: 'partials/demo.html',controller: 'DemoCtrl'});
   }]);
 
   angular.module('myApp.demo', ['ngRoute'])
-  .config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/demo', {
-      templateUrl: 'partials/demo.html',
-      controller: 'DemoCtrl'
-    });
-  }])
-
   .controller('DemoCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.demo = {text: 'Demo'};
   }]);
