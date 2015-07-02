@@ -1,7 +1,9 @@
 require './lib/app'
 
-run App.new do
+app = Sinatra.new do
   get '/api' do
     ''
   end
 end
+
+run App.new(app)
