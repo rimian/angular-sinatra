@@ -14,7 +14,7 @@
   .controller('DemoCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.demo = {};
     $http.get('/api').then(function(response) {
-      $scope.demo.text = 'Demo';
+      $scope.demo.text = response.data;
     });
   }]);
 

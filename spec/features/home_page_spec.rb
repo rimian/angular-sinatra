@@ -3,7 +3,7 @@ feature 'home page yo' do
   before do
     app = Sinatra.new do
       get '/api' do
-        ''
+        'Demo'
       end
     end
     Capybara.app = App.new(app)
